@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Weather App is a simple web application built using React.js that allows users to get the current weather forecast for a given location. It utilizes the OpenCage Geocoding API to convert location inputs into geographical coordinates and the OpenWeatherMap API to retrieve weather forecast data based on those coordinates.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **React.js**: The frontend of the application is built using React.js, a popular JavaScript library for building user interfaces. React enables the creation of reusable components, making it easy to manage complex UIs.
+  
+- **Axios**: Axios is used for making HTTP requests in the application. It provides a simple and easy-to-use interface for interacting with APIs.
+  
+- **dotenv**: The dotenv package is used to load environment variables from a `.env` file into the application. This allows for the secure storage of sensitive information such as API keys.
 
-### `npm start`
+## APIs Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **OpenCage Geocoding API**: This API is used to convert location inputs (such as city names or addresses) into latitude and longitude coordinates. These coordinates are then used to fetch weather forecast data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **OpenWeatherMap API**: The OpenWeatherMap API provides weather forecast data based on geographical coordinates. It offers a wide range of weather information, including current weather conditions, forecasts, and more.
 
-### `npm test`
+## How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Input Location**: Users input a location (e.g., city name, postal code) into the search bar on the Weather App.
 
-### `npm run build`
+2. **Geocoding**: The application uses the OpenCage Geocoding API to convert the location input into latitude and longitude coordinates.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Weather Forecast**: Using the obtained coordinates, the application fetches weather forecast data from the OpenWeatherMap API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Display Forecast**: The retrieved weather forecast data is displayed on the screen, showing details such as temperature, weather conditions, wind speed, and more.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+The Weather App is deployed and accessible online. You can try it out [here](https://weatherapp-navy-nine.vercel.app/) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the Weather App locally on your machine, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone this repository to your local machine using Git:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
